@@ -33,7 +33,7 @@ const MyApp: FC<
     return (
         <>
             <Head>
-                <title>{title !== null ? `${title} - ZHKSB` : "ZHKSB"}</title>
+                <title>{title !== null ? `${title} - 傻逼网` : "傻逼网"}</title>
                 <meta
                     name="viewport"
                     content="initial-scale=1, width=device-width"
