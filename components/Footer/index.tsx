@@ -20,12 +20,12 @@ export default function Footer() {
             <Typography variant={"body2"} component={"p"}>
                 {"Website built by "}
                 <Link
-                    href={"https://www.314669.xyz"}
+                    href={"https://ahdark.com"}
                     underline={"none"}
                     rel={"author noopener"}
                     target={"_blank"}
                 >
-                    {"Hi Tech"}
+                    {"AHdark"}
                 </Link>
                 {"."}
             </Typography>
