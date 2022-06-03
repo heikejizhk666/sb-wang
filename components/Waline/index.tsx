@@ -43,7 +43,7 @@ type inputMetaType = {
 const inputMeta: inputMetaType[] = [
     {
         name: "nick",
-        describe: "昵称",
+        describe: "傻逼姓名",
         type: "text",
         isMustInput: true,
     },
@@ -55,7 +55,7 @@ const inputMeta: inputMetaType[] = [
     },
     {
         name: "link",
-        describe: "站点",
+        describe: "网站",
         type: "url",
         isMustInput: true,
     },
@@ -262,19 +262,19 @@ export default function Waline(props: { path: string }) {
     const submit = (e: FormEvent) => {
         e.preventDefault();
         if (!options.comment || options.comment.trim().length < 2) {
-            enqueueSnackbar("评论内容过短", {
+            enqueueSnackbar("傻逼介绍过短", {
                 variant: "error",
             });
             return;
         }
         if (!options.nick || options.nick.trim().length < 2) {
-            enqueueSnackbar("昵称过短", {
+            enqueueSnackbar("傻逼姓名过短", {
                 variant: "error",
             });
             return;
         }
         if (!options.nick || options.nick.trim().length > 20) {
-            enqueueSnackbar("昵称过长", {
+            enqueueSnackbar("傻逼姓名过长", {
                 variant: "error",
             });
             return;
@@ -284,7 +284,7 @@ export default function Waline(props: { path: string }) {
             options.mail.trim().length < 6 ||
             !new RegExp("^[\\w-.]+@[\\w-]+.[\\w-.]+$").test(options.mail)
         ) {
-            enqueueSnackbar("邮箱不合法", {
+            enqueueSnackbar("傻逼邮箱不合法", {
                 variant: "error",
             });
             return;
@@ -300,7 +300,7 @@ export default function Waline(props: { path: string }) {
             .unwrap()
             .then(() => {
                 refetch();
-                enqueueSnackbar("评论成功", {
+                enqueueSnackbar("添加傻逼成功", {
                     variant: "success",
                 });
                 setOptions({
@@ -330,9 +330,9 @@ export default function Waline(props: { path: string }) {
                     <AlertTitle>注意</AlertTitle>
                     <Box component={"ul"} sx={{ margin: 0, paddingLeft: 2.5 }}>
                         <Box component={"li"}>
-                            {"本评论系统兼容Markdown语法"}
+                            {"本傻逼提交系统简介兼容Markdown语法"}
                         </Box>
-                        <Box component={"li"}>{"请不要大量发表重复内容。"}</Box>
+                        <Box component={"li"}>{"请不要大量提交重复的傻逼"}</Box>
                     </Box>
                 </Alert>
                 <Paper className={classes.editor}>
@@ -340,7 +340,7 @@ export default function Waline(props: { path: string }) {
                         <Box className={classes.editorDiv} id={"editor"}>
                             <TextField
                                 id="comment"
-                                label={options.pid === 0 ? "评论" : "回复"}
+                                label={options.pid === 0 ? "傻逼介绍" : "回复傻逼提交者"}
                                 multiline
                                 rows={5}
                                 className={classes.textarea}
@@ -387,7 +387,7 @@ export default function Waline(props: { path: string }) {
                                         type={"submit"}
                                         disabled={isSending}
                                     >
-                                        {"提交"}
+                                        {"提交傻逼"}
                                     </Button>
                                 </Box>
                             </Box>
