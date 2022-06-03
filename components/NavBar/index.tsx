@@ -94,11 +94,11 @@ export default function NavBar() {
                             component="div"
                             sx={{ flexGrow: 1, cursor: "default" }}
                         >
-                            {title || "ZHKSB.net"}
+                            {title || "sb.314666.xyz"}
                         </Typography>
                     </NextLink>
                     <Link
-                        href={"https://github.com/zhk-sb/zhk"}
+                        href={"https://github.com/heikejizhk666/sb-wang"}
                         rel={"noopener"}
                         underline={"none"}
                         color="inherit"
@@ -134,7 +134,7 @@ export default function NavBar() {
                         />
                         <Divider />
                         <Link
-                            href={"https://blog.zhksb.net"}
+                            href={"https://www.314669.xyz"}
                             rel={"noopener self"}
                             target={"_blank"}
                             underline={"none"}
