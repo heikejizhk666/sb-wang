@@ -126,9 +126,9 @@ export default function NavBar() {
                 <Toolbar />
                 <div className={classes.drawerContainer}>
                     <List>
-                        <NavItem name={"Home"} icon={HomeIcon} path={"/"} />
+                        <NavItem name={"首页"} icon={HomeIcon} path={"/"} />
                         <NavItem
-                            name={"Comment"}
+                            name={"提交傻逼"}
                             icon={ForumIcon}
                             path={"/comment"}
                         />
@@ -144,7 +144,7 @@ export default function NavBar() {
                                 <ListItemIcon>
                                     <BookRoundedIcon />
                                 </ListItemIcon>
-                                <ListItemText primary={"Blog"} />
+                                <ListItemText primary={"博客"} />
                             </ListItemButton>
                         </Link>
                     </List>
