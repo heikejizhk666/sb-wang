@@ -39,7 +39,7 @@ const Comment: FC = () => {
     return (
         <>
             <Head>
-                <meta name={"description"} content={"评论一下大傻逼吧"} />
+                <meta name={"description"} content={"提交一个大傻逼吧"} />
                 <link rel="prefetch" href="//stat.ahdark.com" />
             </Head>
 
@@ -53,7 +53,7 @@ const Comment: FC = () => {
                             component={"h1"}
                             fontFamily={'"Roboto", "Noto Sans SC", sans-serif'}
                         >
-                            {"评论"}
+                            {"提交傻逼"}
                         </Typography>
                     </Box>
                     <Waline path={router.pathname} />
