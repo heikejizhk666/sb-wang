@@ -67,7 +67,7 @@ export default function Home() {
                         className={classes.title}
                         align={"center"}
                     >
-                        {"欢迎评论大傻逼"}
+                        {"欢迎提交大傻逼"}
                     </Typography>
                     <Typography
                         variant={"body1"}
