@@ -49,13 +49,13 @@ const inputMeta: inputMetaType[] = [
     },
     {
         name: "mail",
-        describe: "邮箱",
+        describe: "傻逼邮箱",
         type: "email",
         isMustInput: true,
     },
     {
         name: "link",
-        describe: "网站",
+        describe: "傻逼网站",
         type: "url",
         isMustInput: true,
     },
@@ -340,7 +340,7 @@ export default function Waline(props: { path: string }) {
                         <Box className={classes.editorDiv} id={"editor"}>
                             <TextField
                                 id="comment"
-                                label={options.pid === 0 ? "傻逼介绍" : "回复傻逼提交者"}
+                                label={options.pid === 0 ? "傻逼介绍" : "傻逼介绍"}
                                 multiline
                                 rows={5}
                                 className={classes.textarea}
